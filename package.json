@@ -1,0 +1,52 @@
+{
+  "name": "pluto-sms-notification-channel",
+  "version": "1.0.0",
+  "description": "Plugin for SMS notifications from pluto logging library",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest --coverage --forceExit"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.js",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/coverage/",
+      "<rootDir>/__tests__/utils"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/__tests__/utils"
+    ],
+    "verbose": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samcheseny/pluto-sms-notification-channel.git"
+  },
+  "keywords": [
+    "pluto",
+    "sms",
+    "logging",
+    "notification",
+    "channel"
+  ],
+  "author": "Samuel Ndara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samcheseny/pluto-sms-notification-channel/issues"
+  },
+  "homepage": "https://github.com/samcheseny/pluto-sms-notification-channel#readme",
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "jest": "^24.8.0"
+  },
+  "dependencies": {
+    "twilio": "^3.33.3"
+  }
+}
